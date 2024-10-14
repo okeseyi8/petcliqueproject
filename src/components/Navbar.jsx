@@ -1,7 +1,7 @@
 import { FaArrowRight } from 'react-icons/fa'
 export const Navbar = () => {
   return (
-    <div className="w-screen">
+    <div className="">
       <div className="w-full time-offer flex justify-center items-center h-16 bg-[#120A15]">
         <h1 className="font-satoshi font-normal text-[18px] text-white">
           {' '}
