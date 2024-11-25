@@ -6,10 +6,12 @@ import './App.css'
 import { Navbar } from './components/Navbar'
 import { HeroSecton } from './components/HeroSection'
 import { Testimonial } from './components/testomonial'
-import {Faq} from "./components/Faq"
+import { Faq } from './components/Faq'
+import { Footer } from './components/Footer'
 import dog from './assets/dog.png'
 import bigdog from './assets/bigdog.png'
-import dots  from './assets/dots.png'
+import dots from './assets/dots.png'
+import masked from './assets/masked.png'
 
 import dogtwo from './assets/dog2.png'
 import dogthree from './assets/dog3.png'
@@ -242,28 +244,68 @@ function App() {
         <Testimonial name="Emily Rachael" line={true} />
         <img className="absolute right-0 top-[270px]" src={bigdog} />
         <button className="absolute  bottom-8 right-[170px] flex  font-satoshi font-medium text-[18px] justify-center gap-2 items-center  w-[66px] h-[46px] rounded-[9px] border border-[#C4C2C5]">
-            
-            <FaArrowLeft className='text-[#ECEBEC]' />
-          </button>
+          <FaArrowLeft className="text-[#ECEBEC]" />
+        </button>
         <button className="absolute  bottom-8 right-20 flex  font-satoshi font-medium text-[18px] justify-center gap-2 items-center bg-[#FFD700] w-[66px] h-[46px] rounded-[9px]">
-            
-            <FaArrowRight />
-          </button>
-          <img className='absolute bottom-24 left-[345px]' src={dots}/>
+          <FaArrowRight />
+        </button>
+        <img className="absolute bottom-24 left-[345px]" src={dots} />
       </section>
-      <section className='relative w-full flex  flex-col items-center pt-20 pb-[150px]  '>
+      <section className="relative w-full flex  flex-col items-center pt-20 pb-[150px]  ">
         <div className="w-10/12 flex flex-col items-center justify-center mb-10">
-          <div className='lg:w-9/12'>
-          <h4 className='font-general font-semibold leading-[53px] text-[35px] text-center '>Frequently Asked Questions</h4>
-          <p className="font-satoshi w-full   font-normal text-[18px]  pt-4 z-50 text-center">
-          Got questions about our services or pet care in general? From booking processes to pet health, discover everything you need to know to ensure a seamless and worry-free experience for you and your beloved pet.
+          <div className="lg:w-9/12">
+            <h4 className="font-general font-semibold leading-[53px] text-[35px] text-center ">
+              Frequently Asked Questions
+            </h4>
+            <p className="font-satoshi w-full   font-normal text-[18px]  pt-4 z-50 text-center">
+              Got questions about our services or pet care in general? From
+              booking processes to pet health, discover everything you need to
+              know to ensure a seamless and worry-free experience for you and
+              your beloved pet.
             </p>
           </div>
         </div>
         <Faq />
-
+        <Faq />
+        <Faq />
       </section>
-    
+      <section className="relative w-full h-[1400px] flex  flex-col items-center pt-20 pb-[150px] bg-wad">
+        <div className="w-10/12 flex flex-col items-center justify-center mb-10">
+          <div className="lg:w-9/12 flex flex-col items-center">
+            <h4 className="font-general font-semibold leading-[53px] text-[35px] text-center ">
+              Discover the Latest and Stay in the Loop with Pet Clique
+            </h4>
+            <p className="font-satoshi w-full   font-normal text-[18px]  pt-4 z-50 text-center">
+              Explore the world of pet care innovation and stay connected with
+              Pet Clique. Our latest updates, heartwarming stories, and expert
+              tips await you. Discover the best in pet care and ensure your
+              furry friend thrives with the latest from Pet Clique.
+            </p>
+            <div className="w-full flex flex-col mt-14 items-center ">
+              <div className="w-11/12 flex   justify-between items-end">
+                <h1 className="font-semibold font-general leading-8">
+                  Enter your email
+                </h1>
+                <FaArrowRight />
+              </div>
+              <hr className="w-11/12 mt-2  text-white" />
+              <div className="w-11/12 flex  justify-center items-center mt-4">
+                <p className="font-satoshi w-full   font-normal text-[18px]  pt-4 z-50 text-center">
+                  By Clicking Sign-Up, you are confirming that you agree with
+                  our Terms and Conditions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="relative w-full lg:h-[1076px] flex  flex-col items-center pt-20 pb-[150px] bg-[#FFD700]">
+        <img
+          src={masked}
+          className="absolute inset-0 w-full h-full object-contain z-0"
+        />
+        <Footer className="bg-black" />
+      </section>
     </div>
   )
 }
